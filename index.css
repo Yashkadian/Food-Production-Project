@@ -1,3 +1,7 @@
+:root {
+    font-size: 16px; /* Set a base font size */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +10,7 @@
 }
 
 body {
-    content:'';
+    content: '';
     position: absolute;
     inset: 0;
     background: url(p444.jpg);
@@ -20,31 +24,39 @@ section {
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    display: -webkit-box; /* Flexbox for older Safari */
+    display: -ms-flexbox; /* Flexbox for older IE */
     display: flex;
+    -webkit-box-pack: center; /* Flexbox properties for older Safari */
+    -ms-flex-pack: center; /* Flexbox properties for older IE */
     justify-content: center;
+    -webkit-box-align: center; /* Flexbox properties for older Safari */
+    -ms-flex-align: center; /* Flexbox properties for older IE */
     align-items: center;
 }
 
 section h2 {
     position: relative;
     color: #fff;
-    font-size: 9em;
-}
-section h3{
-    position: absolute;
-    top:43.75em;
-    color:#fff;
-    font-size: 4.375em;
-}
-section img{
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height:100%;
-    object-fit: cover;
+    font-size: 5.625rem; /* 9em to rem */
 }
 
+section h3 {
+    position: absolute;
+    top: 2.734375rem; /* 43.75em to rem */
+    color: #fff;
+    font-size: 2.1875rem; /* 4.375em to rem */
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover; /* Opera */
+    object-fit: cover;
+}
 /* */
 *{
     margin:0;
