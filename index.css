@@ -32,7 +32,7 @@ section h2 {
 }
 section h3{
     position: absolute;
-    top:43.75em;
+    top:-43.75em;
     color:#fff;
     font-size: 4.375em;
 }
