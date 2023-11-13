@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>Reasearch For Food production</title>
+    <link rel="stylesheet" href="p11.css">
+    <style>
+        #text{
+            font-size: 40px;
+            color:black;
+            position: absolute;
+            top:4px;
+        }
+        #home1{
+            color:black;
+            position: absolute;
+            top:10px;
+            right:300px;
+        }
+        #reasearch1{
+            color:black;
+            position: absolute;
+            top:10px;
+            right:200px;
+        }
+        #about1{
+            color:black;
+            position: absolute;
+            top:10px;
+            right:120px;
+        }
+        #contact1{
+            color:black;
+            position: absolute;
+            top:10px;
+            right:20px;
+        }
+    </style>
+
+</head>
+
+<body>
+<header>
+    <h1 id="text"><u>Navigating the Landscape of Sustainable Food Resources</u></h1>
+</header>
+<header>
+    <h2 id="text1">Sustainable Harvest Hub</h2>
+</header>
+<header>
+    <a href="index.html" id="home1">Home</a>
+    <a href="reasearch.html" id="reasearch1">Reasearch</a>
+    <a href="aboutus.html" id="about1">About Us</a>
+    <a href="contact.html" id="contact1">Contact Us</a>
+    
+</header>
+<div class="container">
+    <div class="row">
+        <div class="card" style="--clr:#ff4d4d;">
+            <div class="content" id="agriculture1">
+                <h2>
+                    Agriculture:
+                </h2>
+                <p>Crops:<br>
+                    Agriculture, the bedrock of our sustenance, encompasses an extensive array of crops that form the
+                    very essence of our food production. From the staple grains of rice and wheat, providing the
+                    foundation of our diet, to the diverse array of nutrient-rich vegetables and fruits, the cultivation
+                    of crops represents a vibrant tapestry of biodiversity and productivity.</p>
+
+                <p class="hidden">Technology:<br>
+                    The landscape of modern agriculture is marked by a transformative integration of advanced
+                    technologies. Precision farming, incorporating data-driven decision-making, GMOs tailored for
+                    enhanced resilience, and sustainable practices aimed at minimizing environmental impact—all these
+                    innovations collectively propel agriculture into a new era. Technology becomes the guiding force,
+                    not merely to maximize yields but to harmonize productivity with ecological responsibility.<br><br>
+
+                    Challenges:<br>
+                    Yet, the journey of agriculture is not without its challenges. The looming specter of climate
+                    change, with its unpredictable weather patterns, poses a formidable threat. Water scarcity and soil
+                    degradation further compound the complexities, urging a constant pursuit of adaptive strategies and
+                    innovative solutions to safeguard our food production systems.</p>
+                <span class="view-more" id="readMoreButton" onclick="toggleVisibility('agriculture1')">Read More</span>
+            </div>
+            <div class="imgbx" id="img1">
+                <img id="imgtr" src="tr111.png">
+            </div>
+            <div class="textbx">
+                <h2>Agriculture</h2>
+
+            </div>
+        </div>
+        
+        <div class="card" style="--clr:#4df3ff;">
+            <div class="content" id="livestock">
+                <h2>
+                    Livestock Farming:
+                </h2>
+                <p>Meat Production:<br>
+                    Livestock farming plays a pivotal role in meeting the global demand for meat. Cattle, poultry, and
+                    other livestock contribute significantly to our protein consumption. The narrative, however, is
+                    evolving, with an increasing emphasis on sustainable practices and the ethical treatment of animals.
+                    The industry is undergoing a transformation that seeks a balance between meeting human needs and
+                    respecting the welfare of sentient beings.</p>
+                <p class="hidden" id="livestockhidden">Dairy and Eggs:<br>
+                    Beyond meat, the dairy and eggs sector holds a distinct position in our dietary landscape. Milk,
+                    cheese, and eggs stand as valuable sources of nutrition. However, this sector is not without its
+                    challenges. Ethical considerations and the quality of dairy and egg products are becoming central
+                    themes, prompting innovations and a reevaluation of traditional practices.</p>
+                <span class="view-more" id="readMoreButton" onclick="toggleVisibility('livestock')">Read More</span>
+            </div>
+            <div class="imgbx" id="img1">
+                <img id="imgt" src="tr1112.png">
+            </div>
+            <div class="textbx">
+                <h2>Livestock</h2>
+
+            </div>
+        </div>
+
+        <div class="card" style="--clr:#62ff4d;">
+            <div class="content" id="aquaculture">
+                <h2>
+                    Aquaculture
+                </h2>
+                <p>Fish Farming:<br>
+                    In response to concerns about overfishing, aquaculture emerges as a sustainable alternative. Fish
+                    farming, with its controlled environments, not only addresses the environmental impact but also
+                    ensures a consistent supply of seafood. This approach represents a delicate balance between meeting
+                    the demand for fish and minimizing the strain on natural aquatic ecosystems.</p>
+                <p class="hidden">Shellfish and Seaweed:<br>
+                    Expanding beyond traditional fish farming, the cultivation of shellfish and seaweed gains
+                    prominence. These alternatives not only provide nutritious options but also come with minimal
+                    environmental impact. The cultivation of shellfish and seaweed showcases a holistic approach to
+                    sustainable aquaculture.</p>
+                <span class="view-more" id="readMoreButton" onclick="toggleVisibility('aquaculture')">Read More</span>
+            </div>
+            <div class="imgbx" id="img1">
+                <img src="tr1113.png">
+            </div>
+            <div class="textbx">
+                <h2>Aquaculture</h2>
+
+            </div>
+        </div>
+    
+
+
+
+
+    
+        <div class="card" style="--clr:#d8ff4d;">
+            <div class="content" id="food-processing">
+                <h2>
+                    Food-Processing:
+                </h2>
+                <p>Preservation:<br>
+                    The journey of food extends beyond cultivation to food processing. Preservation techniques, including canning, freezing, and drying, transform raw food into processed products. This not only extends the shelf life of food but also enhances accessibility, making nutrition more readily available.</p>
+                <p class="hidden">Innovation:<br>
+                    The food processing industry is in a constant state of evolution. Innovations such as plant-based proteins, lab-grown meat, and sustainable packaging redefine the landscape. These innovations respond dynamically to the changing demands of a world seeking both nutritional fulfillment and environmental stewardship.</p>
+                <span class="view-more" id="readMoreButton" onclick="toggleVisibility('food-processing')">Read More</span>
+            </div>
+            <div class="imgbx" id="img1">
+                <img src="tr1114.png">
+            </div>
+            <div class="textbx">
+                <h2>Food<br>Production</h2>
+
+            </div>
+        </div>
+
+
+
+        <div class="card" style="--clr:#7a4dff;">
+            <div class="content" id="sustainable-practices">
+                <h2>
+                    Sustainable Practices:
+                </h2>
+                <p>Organic Farming:<br>
+                    The growing demand for organic produce propels the adoption of organic farming methods. These methods prioritize soil health and biodiversity, offering a more holistic and environmentally conscious approach to agriculture. Organic farming represents a consumer-driven shift towards sustainability in food production.</p>
+                <p class="hidden">Precision Agriculture:<br>
+                    In the era of resource optimization, precision agriculture emerges as a key player. Leveraging technology to fine-tune inputs like water, fertilizers, and pesticides, precision agriculture minimizes waste and environmental impact. It exemplifies a data-driven approach to farming that maximizes efficiency while minimizing the ecological footprint.</p>
+                <span class="view-more" id="readMoreButton" onclick="toggleVisibility('sustainable-practices')">Read More</span>
+            </div>
+            <div class="imgbx" id="img1">
+                <img src="tr1115.png">
+            </div>
+            <div class="textbx">
+                <h2>Sustainable<br>Practices</h2>
+
+            </div>
+        </div>
+
+
+        <div class="card" style="--clr:#ff4da6;">
+            <div class="content" id="challenges-future-outlook">
+                <h2>
+                    Challenges and Future Outlook:
+                </h2>
+                <p>Climate Change:<br>
+                    The specter of climate change casts a profound impact on global food production. Shifts in weather patterns, extreme events, and rising temperatures pose significant challenges. Adaptation and mitigation strategies become imperative to ensure the resilience of agricultural systems in the face of a changing climate.</p>
+                <p class="hidden">Population Growth:<br>
+                    As the global population continues to burgeon, the challenge extends beyond sheer quantity of food production. The focus shifts to sustainability and equity in the distribution of resources. The task at hand is not merely to produce more food but to do so in a manner that is equitable, ethical, and environmentally responsible.</p>
+                <span class="view-more" id="readMoreButton" onclick="toggleVisibility('challenges-future-outlook')">Read More</span>
+            </div>
+            <div class="imgbx" id="img1">
+                <img src="tr116.png">
+            </div>
+            <div class="textbx">
+                <h2>Future Outlook</h2>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+    
+
+
+
+
+
+
+    <script>
+     function toggleVisibility(sectionId) {
+        const box = document.getElementById(sectionId);
+        const moreText = box.querySelector('.hidden');
+        const viewMoreButton = box.querySelector('.view-more');
+
+        if (moreText.style.display === 'none' || moreText.style.display === '') {
+            moreText.style.display = 'block';
+            viewMoreButton.innerHTML = 'View Less';
+            box.classList.add('visible'); // Add the 'visible' class when text is shown
+        } else {
+            moreText.style.display = 'none';
+            viewMoreButton.innerHTML = 'Read More';
+            box.classList.remove('visible'); // Remove the 'visible' class when text is hidden
+        }
+
+        updateGrid(); // Call a function to update the grid layout
+    }
+        
+</script>
+
+
+
+
+
+   
+
+</body>
+
+</html>

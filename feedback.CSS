@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+body::before{
+    content:'';
+    position: absolute;
+    inset: 0;
+    background: url(img3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.container
+{
+    position:relative;
+    width: 500px;
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0,0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.container span
+{
+    position:absolute;
+    inset:5px;
+    overflow:hidden;
+    border-radius: 15px;
+}
+.container span::before
+{
+    content:'';
+    position: absolute;
+    inset:5px;
+    background: url(img3.jpg);background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    filter: blur(15px);
+}
+.container span::after{
+    content:'';
+    position: absolute;
+    inset:5px;
+    background: url();background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    filter: blur(15px);
+}
+.container::before{
+    content:'';
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background: repeating-conic-gradient(from  var(--a),#ffdc3f 0%,
+    #ffdc3f 10%,transparent 10%,transparent 80%,#ffdc3f
+     100%);
+    border-radius: 20px;
+    animation:animate 2.5s linear infinite;
+
+}
+@property --a {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value:0deg;
+
+}
+@keyframes animate {
+    0%{
+        --a:0deg
+    }
+    100%{
+        --a:360deg
+    }
+    
+}
+form{
+    position: absolute;
+    left:0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    gap:150px;
+    transition:0.5s;
+}
+form h2{
+    position: absolute;
+    top:-130px;
+    left:50px;
+    
+    color: #fff;
+    font-size: 1.5em;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    font-weight:500;
+    margin-bottom:10px;
+
+}
+form .inputbox{
+    position: absolute;
+    width:300px;
+    left:80px;
+    top:-70px;
+    display:flex;
+    justify-content:space-between;
+
+}
+
+form .inputbox a{
+    color:#fff;
+    text-decoration: none;
+
+    font-size:0.85em;
+
+}
+form .inputbox a:nth-child(2)
+{
+    text-decoration: underline;
+
+}
+form .inputbox input{
+    width:100%;
+    outline: none;
+    border:1px solid rgba(13, 13, 13, 0.25);
+    background: rgba(127, 25, 25, 0.15);
+    padding:6px 15px;
+    border-radius: 4px;
+    font-size:0.85em;
+    color:#fff;
+
+}
+
+form .inputbox input::placeholder{
+    color:rgb(20, 20, 20);
+}
+
+form .inputbox input[type="submit"]{
+    background:#2198f3;
+    font-weight:500;
+    cursor:pointer;
+}
+
+
+
+
+
+form .inputbox1{
+    position: absolute;
+    width:300px;
+    left:80px;
+    top:-20px;
+    display:flex;
+    justify-content:space-between;
+
+}
+
+form .inputbox1 a{
+    color:#fff;
+    text-decoration: none;
+
+    font-size:0.85em;
+
+}
+form .inputbox1 a:nth-child(2)
+{
+    text-decoration: underline;
+
+}
+form .inputbox1 input{
+    width:100%;
+    outline: none;
+    border:1px solid rgba(13, 13, 13, 0.25);
+    background: rgba(143, 17, 17, 0.15);
+    padding:6px 15px;
+    border-radius: 4px;
+    font-size:0.85em;
+    color:#fff;
+
+}
+
+form .inputbox1 input::placeholder{
+    color:rgb(20, 20, 20);
+}
+
+form .inputbox1 input[type="submit"]{
+    background:#2198f3;
+    font-weight:500;
+    cursor:pointer;
+}
+
+.form-group{
+    position: absolute;
+    
+
+}
+.commentss{
+    position: absolute;
+    top:30px;
+    left:80px;
+    
+}
+#comments{
+    position: absolute;
+    top:60px;
+    left:80px;
+    width:300px;
+    height:80px;
+    background: rgba(143, 17, 17, 0.15);
+}
+.submit{
+    position: absolute;
+    top:160px;
+    width:100px;
+    height:30px;
+    left:80px;
+    background: rgb(90, 90, 128);    
+}
+.submit:hover{
+    background:linear-gradient(to bottom, rgb(90,90,128), #b2c1ee)
+}
+
+
+/* */
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+
+}
+.tabs{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 60%; /* Adjust width as needed */
+    top: 10px; /* Adjust the top position */
+    left: 1050px;
+    background: transparent; /* Example background color */
+    z-index: 1000;
+}
+.tabs input{
+    visibility: hidden;
+    display: none;
+    
+
+
+}
+.tabs-background {
+    position: fixed;
+    width: 100%; /* Adjust width as needed */
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Example background color */
+    backdrop-filter: blur(0); /* Apply blur effect */
+    z-index: 999; /* Set z-index to be below the tabs */
+}
+.buttons{
+    position: relative;
+    display: flex;
+    gap:80px;
+    padding:30px 40px;
+    background: url(p4.jpg);
+    filter: blur(0);
+    overflow: hidden;
+    background: transparent;
+    border-radius: 20px;
+    border-bottom:1px solid rgba(255,255,255,0.2)
+    
+    
+}
+.bottom label{
+    width:20%;
+    font-size:1.75em;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    opacity: 0.3;
+    cursor:pointer;
+    transition: 0.5s;
+
+}
+.buttons label:hover{
+    opacity: 1;
+    filter:drop-shadow(0 0 10px #fff )drop-shadow(0 0 20px#fff) 
+}
+.tabs input:nth-child(1):checked ~.buttons label:nth-child(1)
+.tabs input:nth-child(2):checked ~.buttons label:nth-child(2)
+.tabs input:nth-child(3):checked ~.buttons label:nth-child(3)
+.tabs input:nth-child(4):checked ~.buttons label:nth-child(4)
+.tabs input:nth-child(5):checked ~.buttons label:nth-child(5)
+.tabs input:nth-child(6):checked ~.buttons label:nth-child(6)
+{
+    color:#fff;
+    opacity: 1;
+    filter: drop-shadow(0 0 13px #fff) drop-shadow(0 0 20px #fff);
+
+}
+.underline{
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width:20%;
+    height: 5px;
+    transition: 0.5s;
+
+}
+.underline::before{
+content:'';
+position: absolute;
+left:25%;
+width: 40px;
+height: 100%;
+background:#fff;
+border-radius: 4px;
+filter:drop-shadow(0 0 10px #fff)drop-shadow(0 0 20px #fff)
+drop-shadow(0 0 30px #fff)drop-shadow(0 0 50px #fff);
+}
+.underline::after{
+    content:'';
+    position: absolute;
+    left:25%;
+    width: 40px;
+    height: 100%;
+    background:#fff;
+    border-radius: 4px;
+    filter:drop-shadow(0 0 10px #fff)drop-shadow(0 0 20px #fff)
+    drop-shadow(0 0 30px #fff)drop-shadow(0 0 50px #fff)blur(5px);
+}
+
+.tabs input:nth-child(1):checked ~.buttons .underline
+{
+    left: 0;
+}
+.tabs input:nth-child(2):checked ~.buttons .underline
+{
+    left: 17%;
+}
+.tabs input:nth-child(3):checked ~.buttons .underline
+{
+    left: 33%;
+}
+.tabs input:nth-child(4):checked ~.buttons .underline
+{
+    left: 49%;
+}
+.tabs input:nth-child(5):checked ~.buttons .underline
+{
+    left: 83%;
+}
+.tabs input:nth-child(6):checked ~.buttons .underline
+{
+    left: 66%;
+}

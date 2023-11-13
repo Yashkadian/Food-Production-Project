@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="feedback.CSS" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+
+<body>
+    <div class="tabs">
+        <input id="Home" type="radio" name="tabmenu" checked>
+        <input id="Resources" type="radio" name="tabmenu">
+        <input id="Reasearch" type="radio" name="tabmenu">
+        
+        <input id="About Us" type="radio" name="tabmenu">
+        <input id="Contact Us" type="radio" name="tabmenu">
+        <input id="FeedBack" type="radio" name="tabmenu">
+        <div class="buttons">
+            <label for="Home" title="Home"><a href="index.html"><i class="fa-solid fa-house"></i></a></label>
+            <label for="Resources" title="Resources"><a href="p2.html"><i class="fa-solid fa-tree"></i></a></label>
+            <label for="Reasearch" title="Reasearch"><a href="reasearch.html"><i class="fa-solid fa-book"></i></a></label>
+            <label for="About Us" title="About Us"><a href="aboutus.html"> <i class="fa-solid fa-user"></i></a></label>
+            <label for="FeedBack" title="FeedBack"><a href="feedback.HTML"><i class="fa-solid fa-comment"></i></a></label>
+            <label for="Contact Us" title="Contact Us"><a href="contact.html"><i class="fa-solid fa-envelope"></i></a></label>
+            <div class="underline">
+
+            </div>
+        </div>
+    </div>          
+    <div class="container">
+        <span></span>
+        <span></span>
+        <span></span>
+        <form id="contactus">
+            <h2>We'd Love Your Feedback</h2>
+            <div class="inputbox">
+                <input type="text" placeholder="Username">
+
+
+            </div>
+            <div class="inputbox1">
+                <input type="text" placeholder="E-mail">
+            </div>
+            <div class="form-group">
+                <label for="comments" class="commentss">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" required></textarea>
+            </div>
+            <input type="submit" value="Submit" class="submit">
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="aboutus.css" rel="stylesheet">
+    <title>Food Cooperation</title>
+    
+    
+</head>
+<body>
+          
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">Sustainable Harvest Hub</div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="p2.html">Services</a></li>
+                <li><a href="feedback.HTML">FeedBack</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="about-section">
+            <div class="about-text">
+                <h1 style="font-size: 50px;">About Us</h1>
+                <p style="font-size: 30px;">Food Cooperation is a leading online food delivery platform that connects customers with their favorite restaurants. 
+                    We offer a wide range of cuisines, from local delicacies to international dishes, and deliver them to your doorstep
+                     in minutes. Whether you are craving for pizza, burger, sushi, or salad, we have it all.
+                      You can also enjoy exclusive deals and discounts on your orders, and pay with ease using various payment methods.
+                    </p><br><br>
+                    <h1 style="font-size: 40px;">Welcome to Sustainable Haarvest Hub</h1>
+
+                    <p style="font-size: 30px;" class="p1">At Food Producer Insight, we're passionate about the art and science of food production. Our mission is to provide valuable insights, resources, and information to food producers, whether you're a small-scale artisan or a large-scale manufacturer. We understand the challenges and opportunities in the food production industry, and we're here to help you thrive.</p>
+                
+                    
+                    
+                
+                    <p style="font-size: 30px;">Join us in discovering the secrets of successful food production!</p>
+                <button  id="read-more-button">Read More</button>
+                <div class="more-content">
+                    <h2 style="font-size: 40px;">What We Offer</h2>
+                    <ol style="font-size: 30px;">
+                        <li><strong>In-Depth Articles:</strong> Our blog is your go-to source for in-depth articles covering a wide range of topics in food production. From sustainable farming practices to the latest food safety regulations, we've got you covered.</li>
+                        <li><strong>Expert Interviews:</strong> Gain insights from industry experts as they share their knowledge and experiences. Learn from the best in the field to improve your own food production practices.</li>
+                        <li><strong>Product Reviews:</strong> We provide honest and unbiased reviews of the latest food production equipment, tools, and technology. Make informed decisions about your investments.</li>
+                        <li><strong>Industry News:</strong> Stay up-to-date with the latest developments in the food production industry. Our news section keeps you informed about trends, innovations, and market changes.</li>
+                        <li><strong>Resources:</strong> Find valuable resources, templates, and guides to help you streamline your food production processes and boost your efficiency.</li>
+                    </ol>
+                
+                    <h2 style="font-size: 40px;">Why Choose Food Producer Insight?</h2>
+                    <ul style="font-size: 30px;">
+                        <li><strong>Reliable Information:</strong> Our content is thoroughly researched and verified to ensure accuracy and reliability.</li>
+                        <li><strong>Community:</strong> Join our community of food producers and enthusiasts. Share your insights and learn from others in the field.</li>
+                        <li><strong>Customized Insights:</strong> Tailored content to address the specific needs of small, medium, and large food producers.</li>
+                        <li><strong>Stay Ahead:</strong> Keep your business up to date with the latest industry trends, regulations, and best practices.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8b25saW5lJTIwZm9vZCUyMGRlbGl2ZXJ5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Online food delivery">
+            </div>
+        </div>
+        
+        <!--<footer class="last">
+            <div style="font-size: 20px;" id="lasttext">Get Started Today:</div>
+           
+                       <p style="font-size: 20px;" id="lasttext1">Explore our website, dive into our articles, and be part of the Food Producer Insight community.<br> Whether you're a newcomer to the industry or a seasoned professional, you'll find the resources and knowledge you need to succeed.</p>
+                       <p style="font-size: 20px;" id="lasttext2">Have questions or suggestions?<br> Feel free to reach out to us. We're here to support you on your journey to food production excellence.</p>
+           </footer>-->
+       
+    <script>
+        document.getElementById('read-more-button').addEventListener('click', function() {
+    var moreContent = document.querySelector('.more-content');
+    if (moreContent.style.display === 'none' || moreContent.style.display === '') {
+        moreContent.style.display = 'block';
+        this.textContent = 'Read Less'; // Change button text
+    } else {
+        moreContent.style.display = 'none';
+        this.textContent = 'Read More'; // Change button text
+    }
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paralox</title>
+    <link href="index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+<body>
+    <div class="tabs">
+        <input id="Home" type="radio" name="tabmenu" checked>
+        <input id="Resources" type="radio" name="tabmenu">
+        <input id="Reasearch" type="radio" name="tabmenu">
+        
+        <input id="About Us" type="radio" name="tabmenu">
+        <input id="Contact Us" type="radio" name="tabmenu">
+        <input id="FeedBack" type="radio" name="tabmenu">
+        <div class="buttons">
+            <label for="Home" title="Home"><i class="fa-solid fa-house"></i></label>
+            <label for="Resources" title="Resources"><a href="p2.html"><i class="fa-solid fa-tree"></i></a></label>
+            <label for="Reasearch" title="Reasearch"><a href="reasearch.html"><i class="fa-solid fa-book"></i></a></label>
+            <label for="About Us" title="About Us"><a href="aboutus.html"> <i class="fa-solid fa-user"></i></a></label>
+            <label for="FeedBack" title="FeedBack"><a href="feedback.HTML"><i class="fa-solid fa-comment"></i></a></label>
+            <label for="Contact Us" title="Contact Us"><a href="contact.html"><i class="fa-solid fa-envelope"></i></a></label>>
+            <div class="underline">
+
+            </div>
+        </div>
+    </div>                    
+    <section>
+        <img src="1.png" data-speed="-5" class="layer">
+        <img src="2.png" data-speed="5" class="layer">
+        <img src="3.png" data-speed="2" class="layer">
+        <img src="4.png" data-speed="6" class="layer">
+        <img src="5.png" data-speed="8" class="layer">
+        <img src="6.png" data-speed="-2" class="layer">
+        <img src="7.png" data-speed="4" class="layer">
+        <img src="8.png" data-speed="-9" class="layer">
+        <img src="9.png" data-speed="8" class="layer">
+        <img src="10.png" data-speed="7" class="layer">
+        <img src="11.png" data-speed="-1" class="layer">
+        <img src="12.png" data-speed="2" class="layer">
+
+        
+        
+        <h2 class="layer" data-speed="-5">Sustainable Harvest Hub</h2>
+        <h3 class="layer1" data-speed="5">Sow Grow Know:<br> Your Guide to Food Production</h3>
+    </section>
+    <script>
+        document.addEventListener("mousemove", parallax);
+    
+        function parallax(e) {
+            document.querySelectorAll('.layer, .layer1').forEach(layer => {
+                const speed = layer.getAttribute('data-speed');
+                const x = (window.innerWidth - e.pageX * speed) / 100;
+                const y = (window.innerHeight - e.pageY * speed) / 100;
+                layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+            });
+        }
+        
+    </script>
+    
+</body>
+</html>

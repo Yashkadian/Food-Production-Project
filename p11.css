@@ -1,0 +1,244 @@
+@import url('https://fonts.goggleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+body{
+    content:'';
+    position: absolute;
+    inset: 0;
+    background: url(img16.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    top:30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap:80px;
+    flex-wrap: wrap;
+}
+.row {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 100px;
+}
+.card {
+    width: 30%; /* Adjust width as needed */
+    padding: 20px;
+    border: 1px solid #000;
+    text-align: center;
+    border-radius: 2px;
+   
+}
+.container .card .content:hover
+{
+    position: absolute;
+    width: 300px;
+    height:400px;
+    background-color: grey;
+}
+.container .card{
+    position: relative;
+    width:300px;
+    height:400px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container .card:hover .content
+{
+    opacity: 1;
+    transition-delay: 0.5s;
+    
+}
+
+
+.container .card {
+    transition: margin-bottom 0.5s; /* Adding a transition for smoother animation */
+  }
+  
+  /* When the content is visible */
+  .container .card.visible {
+    margin-bottom: 200px; /* Adjust the spacing when visible */
+  }
+  
+  /* When the agriculture content is visible and hovered */
+  #agriculture1.visible:hover ~ #food-processing {
+    margin-top: 200px; /* Adjust margin-top for food-processing card */
+  }
+.container .card .content h2
+{
+    color: var(--clr);
+}
+.container .card .content a
+{
+    color:#fff;
+    background: var(--clr);
+    padding:10px 15px;
+    text-decoration: none;
+    display:inline-block;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+}
+.container .card .content p
+{
+    text-align: center;
+    color: #fff;
+}
+.container .card .content
+{
+    position: absolute;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    padding:25px;
+    gap:10px;
+    transition-delay: 0.5s;
+    transition: 0.5s;
+    opacity: 0;
+
+}
+.container .card .imgbx,
+.container .card .textbx
+{
+    position: relative;
+    width:100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+
+}
+.container .card .imgbx
+{
+    background: white;
+    height:120px;
+    z-index: 1;
+    transform-origin: bottom;
+}
+.container .card:hover .imgbx
+{
+    transform:translateY(-100%) rotateX(90deg);
+}
+.container .card .textbx
+{
+    height:280px;
+    background: var(--clr);
+    border-top:8px solid #333;
+    transform-origin:top;
+    transition-delay: 0.5s;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.container .card .textbx h2{
+    color:#222;
+    letter-spacing: 1.25mm;
+    font-weight: 500;
+    text-transform:uppercase;
+    background: #fff;
+    padding: 5px 25px;
+    box-shadow: 0 0 0 8px #133;
+
+}
+.container .card:hover .textbx
+{
+    transform:translateY(100%) rotateX(90deg);
+}
+.container .card .imgbx::before
+{
+    content:'';
+    position: absolute;
+    bottom:-70px;
+    left:50%;
+    transform: translateX(-50%);
+    width:150px;
+    height:100px;
+    background: #fff;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    z-index:1;
+}
+.container .card .textbx::before
+{
+    content:'';
+    position:absolute;
+    top: -8px;
+    width:160px;
+    height:80px;
+    background: #333;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+.container .card .imgbx img
+{
+    position: relative;
+    top:50px;
+    z-index:1000;
+}
+.card .imgbx img{
+    
+    width:150px;
+    height:150px;
+    object-fit: cover;
+}
+.hidden{
+    display:none;
+}
+.view-more {
+    cursor: pointer;
+    color: #007BFF;
+    align-self: flex-end;
+    margin-top: auto;
+    border:3px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+.view-more:hover{
+    text-decoration: underline;
+    border: 4px solid black;
+    border-radius:5px;
+    
+}
+
+.content p {
+    max-height: 200px; 
+    overflow-y: auto; 
+}
+
+#text1{
+    color: black;
+    position: absolute;
+    top:10px;
+    left:10px;
+}
+
+#imgt{
+    position:relative;
+    top:30px;
+}
+#imgtr{
+    top:10px;
+}
